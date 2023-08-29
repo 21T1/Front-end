@@ -1,0 +1,296 @@
+:root{
+    --color: #0b6444;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: #dadada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h1 h1{
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: var(--color);
+    margin-bottom: 60px;
+}
+#header{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 120px;
+}
+#header .menu{
+    font-size: 19px;
+    width: 100%;
+    height: 40px;
+    background: var(--color);
+}
+#header img{
+    margin: 0 20px 0 90px;
+    height: 36px;
+    padding: 7px 0;
+    float: left;
+    cursor: pointer;
+}
+#header li{
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    padding: 7px 0;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    float: left;
+}
+#header li:hover{
+    background: #18926d;
+    color: #fff;
+    height: auto;
+}
+.item{
+    padding: 10px 0;
+}
+#header li div i{
+    font-size: 10px;
+    margin-right: 5px;
+    color: #fff;
+}
+.item div{
+    background: #18926d;
+    text-align: justify;
+    padding: 10px;
+    transition: 0.4s;
+}
+.item div:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+#header #last{
+    display: flex;
+    justify-content: center;
+}
+#header a:visited, #header a:link, #header a:hover{
+    color:white;
+    text-decoration:none;
+}
+#user{
+    width: 200px;
+    color: #fff;
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+#user i{
+    padding: 0 10px;
+}
+.container, .information{
+    width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.container{
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.images{
+    height: 540px;
+    width: 540px;
+    display: flex;
+    border-right: 1px solid #aaa;
+}
+.images div{
+    margin-right: 10px;
+}
+#img{
+    height: 135px;
+    width: 135px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#img:hover{
+    border: 1px solid var(--color);
+}
+#img img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#main{
+    border-radius: 5px;
+}
+.book{
+    height: 100%;
+    width: 600px;
+    padding: 0 20px 0 40px;
+}
+.book h1{
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+#bought, #info{
+    display: flex;
+    font-size: 18px;
+}
+#bought{
+    margin-bottom: 35px;
+}
+#bought i{
+    color: #fdd836;
+}
+#bought p{
+    margin-right: 5px;
+}
+#info{
+    justify-content: space-between;
+    padding: 10px 20px 15px 20px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+}
+#price{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 5px 20px;
+    border: 1px solid #aaa;
+    border-top: none;
+    margin-bottom: 35px;
+}
+#price h2{
+    font-size: 30px;
+    color: #c92127;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#price h3{
+    color: #000;
+    font-size: 20px;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+#price p{
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background: #c92127;
+    overflow: hidden;
+}
+#address, #more{
+    display: flex;
+    justify-content: space-between;
+}
+#address p, #more p{
+    font-size: 18px;
+    font-weight: normal;
+}
+.container #p1{
+    color: #c92127;
+    cursor: pointer;
+} 
+#address{
+    margin-bottom: 10px;
+}
+#more{
+    margin-bottom: 70px;
+}
+#number{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+#number p{
+    font-size: 20px;
+    margin-right: 20px;
+}
+#number input{
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    height: 30px;
+    width: 45px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    width: 250px;
+    font-size: 24px;
+    border-radius: 7px;
+    padding: 10px 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#b1{
+    color: var(--color);
+    border: 1px solid var(--color);
+    background: #fff;   
+}
+#b1:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+#b2{
+    color: #fff;
+    background: var(--color);   
+}
+#b2:hover{
+    background: #18926dcd;
+}
+.information #inf1{
+    display: flex;
+}
+.information h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.information p{
+    font-size: 18px;
+}
+.information #inf1{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.information #inf-1{
+    width: 250px;
+    padding: 10px 0 1px 10px;
+    background: #dadada;
+}
+.information #inf-2{
+    padding: 10px 10px 1px 0;
+    width: 890px;
+    border: 1px solid rgb(243, 240, 240);
+    border-radius: 0 10px 10px 0;
+}
+#inf1 p{
+    margin: 0 0 10px 10px;
+}
+.information #inf1 #spec{
+    width: 100%;
+    background: rgb(243, 240, 240);
+}
+#inf2 p{
+    padding-bottom: 10px;
+}

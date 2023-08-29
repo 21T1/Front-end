@@ -1,0 +1,164 @@
+:root{
+    --color: #0b6444;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: #dadada;
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+}
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: var(--color);
+    margin-bottom: 70px;
+}
+#header{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 120px;
+}
+#header .menu{
+    font-size: 19px;
+    width: 100%;
+    height: 40px;
+    background: var(--color);
+}
+#header img{
+    margin: 0 20px 0 90px;
+    height: 36px;
+    padding: 7px 0;
+    float: left;
+    cursor: pointer;
+}
+#header li{
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    padding: 7px 2px;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    float: left;
+}
+#header li:hover{
+    background: #18926d;
+    color: #fff;
+    height: auto;
+}
+.item{
+    padding: 10px 0;
+}
+#header li div i{
+    font-size: 10px;
+    margin-right: 5px;
+    color: #fff;
+}
+.item div{
+    background: #18926d;
+    text-align: justify;
+    padding: 10px;
+    transition: 0.4s;
+}
+.item div:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+#header #last{
+    display: flex;
+    justify-content: center;
+}
+#header a:visited, #header a:link, #header a:hover{
+    color:white;
+    text-decoration:none;
+}
+#user{
+    width: 200px;
+    color: #fff;
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+#user i{
+    padding: 0 10px;
+}
+.banner{
+    height: 450px;
+    width: 1400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.banner img{
+    width: 100%;
+}
+.sale{
+    height: 450px;
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sale h3{
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--color);
+    padding: 40px 0 20px 0;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--color);
+}
+.books{
+    width: 1400px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+#abook{
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#abook:hover{
+    border: 1px solid var(--color);
+}
+#abook img{
+    height: 180px;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+#abook img:hover{
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+#abook h4{
+    padding: 0 10px;
+    font-size: 18px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+#abook #bi{
+    padding: 0 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+}
